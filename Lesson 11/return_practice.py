@@ -9,5 +9,5 @@ def distance_formula_v2(x1, y1, x2, y2):
     distance = math.sqrt((x2-x1)**2 + (y2-y1)**2)
     return distance
 
-print(distance_formula_v2(0, 0, 10, 0))
+print(distance)
     
