@@ -1,4 +1,7 @@
-import pythonGraph
+import pythonGraph, math
+
+# Ball Radius
+BALL_RADIUS = 10
 
 # Global Variables
 ball_1_x = 300
@@ -11,7 +14,7 @@ def erase_everything():
     pythonGraph.clear_window(pythonGraph.colors.WHITE)
 
 def draw_ball():
-    pythonGraph.draw_circle(ball_1_x, ball_1_y, 10, pythonGraph.colors.BLUE, True)
+    pythonGraph.draw_circle(ball_1_x, ball_1_y, BALL_RADIUS, pythonGraph.colors.BLUE, True)
 
 def move_ball():
     global ball_1_x, ball_1_y, ball_1_x_velocity, ball_1_y_velocity

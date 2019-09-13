@@ -6,12 +6,14 @@ ball_y = 300
 ball_x_velocity = 3
 ball_y_velocity = 5
 
+color = pythonGraph.create_random_color()
+
 # Functions Go Here
 def erase_everything():
     pythonGraph.clear_window(pythonGraph.colors.WHITE)
-
+    
 def draw_ball():
-    pythonGraph.draw_circle(ball_x, ball_y, 10, pythonGraph.colors.BLUE, True)
+    pythonGraph.draw_circle(ball_x, ball_y, 10, color, True)
 
 def move_ball():
     global ball_x, ball_y, ball_x_velocity, ball_y_velocity
@@ -37,6 +39,9 @@ while pythonGraph.window_not_closed():
     
     # Step 3: Draw the Ball
     draw_ball()
+    
+    if pythonGraph.key_pressed('left'):
+        ball_x_velocity -= 1    
         
     # Step 4: Update the Screen 
     pythonGraph.update_window()
