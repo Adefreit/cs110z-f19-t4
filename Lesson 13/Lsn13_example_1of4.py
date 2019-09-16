@@ -23,7 +23,7 @@ while pythonGraph.window_not_closed():
     # don't erase the screen
     if pythonGraph.mouse_button_down(pythonGraph.mouse_buttons.LEFT):
         erase_on = False
-        pythonGraph.draw_circle(mouse_x, mouse_y, 10, pythonGraph.colors.BLUE, True)
+        #pythonGraph.draw_circle(mouse_x, mouse_y, 10, pythonGraph.colors.BLUE, True)
     
     # if the mouse button is released turn erase on
     if pythonGraph.mouse_button_released(pythonGraph.mouse_buttons.LEFT):
